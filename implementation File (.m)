@@ -1,0 +1,16 @@
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    UIBarButtonItem *closeBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Done" style:UIBarButtonItemStyleBordered target:self action:@selector(closeTableView)];
+    
+     self.navigationItem.rightBarButtonItem = closeBarButtonItem;
+    
+
+}
+
+- (void)closeTableView
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
